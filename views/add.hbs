@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <style>
+        input{
+            margin: 20px;
+        }
+
+        h2{
+            text-align: center; 
+            margin-top: 10%;
+        }
+
+        form{
+            text-align: center; 
+            margin-top: 5px;
+            background-color: rgb(177, 174, 174);
+            margin-left: 580px;
+            margin-right: 580px;
+        }
+
+        body{
+            background-image: url(https://downloadwap.com/thumbs2/wallpapers/p2/new/23/QPTjRfW6.jpg);
+            background-size: 80% ;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New</h2>
+    <form action="./add" method="POST" enctype="multipart/form-data">
+        <input type="text" name="txtName" placeholder="Name" />                 <br/>
+        <input type="file" name="productImage"/>                                <br/>
+        <input type="text" name="txtDescription" placeholder="Description" />   <br/>
+        <input type="text" name="txtColor" placeholder="Color" />
+        <input type="text" name="txtPrice" placeholder="Price" />               <br/>
+        <input type="submit" value="Add product" />
+    </form>
+</body>
+</html>
